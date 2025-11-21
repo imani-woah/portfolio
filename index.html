@@ -11,58 +11,103 @@
     <body>
         <div class="container">
             <div class="header">
-                <a href="#default" class="logo"><img src=assets/logo_title.png width="250px"></a>
+                <a href="index.html" class="logo"><img src=assets/logo_title.png width="250px"></a>
             
                 <div class="header-right">
                     <a class="active" href="contact.html">Contact</a>
                 
-                    <a href="#contact">Work</a>
-            
                     <a href="about.html">About</a>
+
+                    <a href="#work">Work</a>
                 </div>
             </div>
             <div class="landing">
-                <div class="hello">Hi Hi! I'm Imani
+                <div class="hello">Hi Hi! I'm Imani,
                     <br>I'm a designer!
                 </div>
-                <div class="scroll">scroll to see work</div>
+                <div class="scroll">Check out my work
+                    <br>v</div>
             </div>
 
-            <div class="workHeader">
-                <button class="all-btn">all</button>
-                <button class="designs-btn">designs</button>
-                <button class="illustrations-btn">illustrations</button>
-                <button class="websites-btn">websites</button>
+            <!-- <div class="workHeader"> -->
+                <!-- <button class="all-btn">all</button> -->
+                <!-- <button class="designs-btn">designs</button> -->
+                <!-- <button class="illustrations-btn">illustrations</button> -->
+                <!-- <button class="websites-btn">websites</button> -->
+            <!-- </div> -->
+
+            <div class="workHeader filter">
+                <button class="all-btn active">all</button>
+                <button class="design">designs</button>
+                <button class="illu">illustrations</button>
+                <button class="web">websites</button>
             </div>
                 
             <div class="row">
                 <div class="column">
-                    <img src="wedding.jpg">
-                    <img src="rocks.jpg">
-                    <img src="falls2.jpg">
-                    <img src="paris.jpg">
-                    <img src="nature.jpg">
-                    <img src="mist.jpg">
-                    <img src="paris.jpg">
+                    <img class="filterDiv design visible all" src="assets/artwork/aesthetic_book.png" class="design">
+                    <img class="filterDiv illu design visible all" src="assets/artwork/apple_book.png" class="illustration">
+                    <img class="filterDiv web visible all" src="assets/artwork/linocut_map.png" class="web">
                 </div>
                 <div class="column">
-                    <img src="underwater.jpg">
-                    <img src="ocean.jpg">
-                    <img src="wedding.jpg">
-                    <img src="mountainskies.jpg">
-                    <img src="rocks.jpg">
-                    <img src="underwater.jpg">
+                    <img class="filterDiv illu visible all" src="assets/artwork/hugaboo_book.png" class="illustration">
+                    <img class="filterDiv design visible all" src="assets/artwork/lino_manual.png" class="web">
+                    <img class="filterDiv design visible all" src="assets/artwork/linocut_ad.png" class="design">
                 </div>
                 <div class="column">
-                    <img src="wedding.jpg">
-                    <img src="rocks.jpg">
-                    <img src="falls2.jpg">
-                    <img src="paris.jpg">
-                    <img src="nature.jpg">
-                    <img src="mist.jpg">
-                    <img src="paris.jpg">
+                    <img class="filterDiv illu visible all" src="assets/artwork/cgh_zine.png" class="web">
+                    <img class="filterDiv web visible all" src="assets/artwork/notlikeus_poster.png" class="design">
+                    <img class="filterDiv design web visible all" src="assets/artwork/posters.png" class="illustration">
                 </div>
             </div>
         </div>
+
+        <!-- <script>
+            filterSelection("all")
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+            }
+
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script> -->
+        <script src="assets/jquery-3.7.1.min.js"></script>
+        <!-- our personal scripts are usually the last script referenced -->
+        <script src="main.js"></script>
     </body>
 </html>
