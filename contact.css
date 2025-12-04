@@ -15,7 +15,7 @@
 body {
     background:#e4ccee;
     margin:0;
-    overflow:scroll;
+    overflow:hidden;
 }
 
 img {
@@ -109,7 +109,7 @@ img {
 .landing {
     background:#ebd4f7;
     background-image:url(assets/landing_image.png);
-    height:100vh;
+    height:90vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -119,6 +119,7 @@ img {
 
 .hello {
     /* background:#e556c4; */
+    width:1200px;
     display:flex;
     flex-flow:column;
     justify-content:center;
@@ -127,6 +128,45 @@ img {
     font-family: 'IJT';
     font-size:400%;
 }
+
+.scroll {
+    /* background:#7754df; */
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-family: 'Cafe';
+    font-size:110%;
+}
+
+.scroll a {
+  background-color: #b454df;
+  color: white;
+  border-radius: 100px;
+  padding:12px;
+  margin: 0px 8px;
+  text-decoration-line:none;
+}
+
+.scroll a:hover {
+  background-color: #7754df;
+  color: white;
+}
+
+.foot {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:30px;
+  font-family:'IJT';
+  margin: 30px;
+  font-weight:bolder;
+  font-size:20px;
+  color:#e4ccee;
+  /* background:red; */
+}
+
 /* 7754df blue
 e556c4 pink
 b454df purple */
