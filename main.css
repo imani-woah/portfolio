@@ -12,10 +12,14 @@
     src: url('assets/LouisGeorgeCafe.woff')
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background:#e4ccee;
+    /* background:#e4ccee; */
+    background:#f2e5f8;
     margin:0;
-    overflow:scroll;
 }
 
 img {
@@ -23,7 +27,7 @@ img {
 }
 
 .container {
-    background:#e4ccee;
+    background:#f2e5f8;
     /* vh means viewport height! */
     height:fit-content;
     /* no need for width, it's a block element so it's already 100% */
@@ -75,6 +79,7 @@ img {
 .header a:hover {
   background-color: #fba3e7;
   color: #1f153c;
+  transition:0.5s;
 }
 
 /* Style the active/current link*/
@@ -91,6 +96,7 @@ img {
 /* Float the link section to the right */
 .header-right {
   float: right;
+  scroll-behavior: smooth;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -159,7 +165,7 @@ img {
 
 /* Create three equal columns that sits next to each other */
 .column {
-  max-width:33%;
+  max-width:25%;
   padding: 0.3vw;
   justify-content:center;
   align-items:center;
@@ -197,6 +203,13 @@ img {
   margin: 2px;
   display: none;
 }
+
+.working:hover {
+  transition:0.5s;
+  scale:1.1;
+}
+
+
 
 .visible {
   display: block;

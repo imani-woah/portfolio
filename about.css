@@ -13,7 +13,7 @@
 }
 
 body {
-    background:#e4ccee;
+    background:#f2e5f8;
     margin:0;
     overflow:scroll;
 }
@@ -23,7 +23,7 @@ img {
 }
 
 .container {
-    background:#e4ccee;
+    background:#f2e5f8;
     /* vh means viewport height! */
     height:fit-content;
     /* no need for width, it's a block element so it's already 100% */

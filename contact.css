@@ -13,7 +13,7 @@
 }
 
 body {
-    background:#e4ccee;
+    background:#f2e5f8;
     margin:0;
     overflow:hidden;
 }
@@ -163,7 +163,7 @@ img {
   margin: 30px;
   font-weight:bolder;
   font-size:20px;
-  color:#e4ccee;
+  color:#f2e5f8;
   /* background:red; */
 }
 
